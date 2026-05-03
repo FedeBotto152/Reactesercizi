@@ -1,13 +1,26 @@
 
 import './App.css'
 
-function App() {
+function Message() {
+  return <p>What a beautiful day!</p>
+}
 
-
+function Hello() {
   return (
     <>
-
+      <h2>Hello, World!</h2>
+      <Message />
     </>
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <Hello />
+      <Hello />
+      <Message />
+    </div>
   )
 }
 
