@@ -1,27 +1,15 @@
-
 import './App.css'
-
-function Message() {
-  return <p>What a beautiful day!</p>
-}
-
-function Hello() {
-  return (
-    <>
-      <h2>Hello, World!</h2>
-      <Message />
-    </>
-  )
-}
+import Welcome from './components/Welcome'
 
 function App() {
   return (
-    <div>
-      <Hello />
-      <Hello />
-      <Message />
-    </div>
+    <Welcome
+      name={<strong>Federico</strong>}
+      age={23}
+    />
   )
 }
 
 export default App
+
+
