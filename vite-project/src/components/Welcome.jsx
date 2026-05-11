@@ -18,6 +18,8 @@ function Welcome(props) {
         <Age age={props.age} />
       )}
 
+      {props.age < 65 && <Age age={props.age} />}
+
       <Message age={props.age} />
     </div>
   )
