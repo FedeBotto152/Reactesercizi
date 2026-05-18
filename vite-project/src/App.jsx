@@ -1,15 +1,11 @@
-
-import './App.css'
-
-import Welcome from "./components/Welcome"
+import Counter from "./Counter";
 
 function App() {
   return (
-    <Welcome
-      name="John"
-      age={25}
-    />
-  )
+    <div>
+      <Counter initialValue={0} incrementAmount={1} />
+    </div>
+  );
 }
 
-export default App
+export default App;
